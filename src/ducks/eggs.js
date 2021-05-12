@@ -25,7 +25,7 @@ const decrement = () => {
 const changeCount = (count) => {
     return {
         type: CHANGE_COUNT,
-        payload: count,
+        payload: +count,
     }
 }
 

@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { Provider } from 'react-redux'
+import nest from './ducks/nest'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <App />
+  <Provider store={nest}>
+    <App />
+  </Provider>
   , document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
